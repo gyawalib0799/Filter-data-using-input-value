@@ -47,7 +47,7 @@ class App extends Component{
     const lowercasedFilter = filter.toLowerCase();//input value in textbar to lowercase
     const filteredData = data.filter(item => {
       return Object.keys(item).some(key =>
-        item[key].toLowerCase().includes(lowercasedFilter)
+        item[key].toLowerCase().includes(lowercasedFilter)//.some includes input value
       );
     });
 
